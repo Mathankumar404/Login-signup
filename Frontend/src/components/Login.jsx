@@ -6,6 +6,7 @@ const Login = () => {
     const[password,setPassword]=useState(null);
     const navigate=useNavigate();
       const [result, setResult] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
     const handlesubmit = async () => {
       if (!email || !password || !email.includes('@gmail.com')) {
@@ -26,13 +27,30 @@ const Login = () => {
   return (
     <div className="login-container">
     <input type="email" value={email || ''} placeholder='Email' onChange={(e)=>setemail(e.target.value)} />
-    <input type="password" value={password || ''} placeholder='Password' onChange={(e)=>setPassword(e.target.value)} minLength={8} required />
-    <button onClick={handlesubmit}>Login</button>
+<div className="password-input-wrapper">
+        <input
+          type={showPassword ? "text" : "password"}
+          value={password || ''}
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+          minLength={8}
+          required
+        />
+        <span
+          className="toggle-password"
+          onClick={() => setShowPassword(!showPassword)}
+        >
+          {showPassword ? '🙈' : '👁️'}
+        </span>
+      </div>   
+       <button onClick={handlesubmit}>Login</button>
     <h2>{result.message}</h2>
 <p className="redirect-text">
   Don’t have an account? <span className="link-text" onClick={() => navigate("/signup")}>Sign up</span>
 </p>
-  </div>
+  <p className="forgot-text" onClick={() => navigate("/forgotpassword")}>
+        Forgot password?
+      </p>  </div>
   )
 }
 

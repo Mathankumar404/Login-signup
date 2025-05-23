@@ -78,6 +78,47 @@ body {
   text-decoration: underline;
 }
 
+.redirect-text,
+.forgot-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+
+}
+
+.link-text,
+.forgot-text {
+  color: #007bff;
+  cursor: pointer;
+ 
+}
+.forgot-text{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-text:hover,
+.forgot-text:hover {
+  text-decoration: underline;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input-wrapper input {
+  padding-right: 2.5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
   .login-container {
