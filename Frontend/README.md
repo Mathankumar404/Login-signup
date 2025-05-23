@@ -1,12 +1,40 @@
-# React + Vite
+# 🔐 React Authentication App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React.js authentication system that includes:
 
-Currently, two official plugins are available:
+- Login & Signup pages
+- Forgot password & password reset functionality (JWT-based)
+- Password strength indicator
+- Frontend routing with React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼 Demo
 
-## Expanding the ESLint configuration
+>https://login-signup-flax-alpha.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🚀 Features
+
+- 📩 Login/Signup forms
+- 🔁 Toggle between login & signup views
+- 💪 Password strength meter
+- 🔐 JWT-based password reset via email link
+- 🧭 React Router integration
+- ✅ Form validations
+
+## 🛠 Tech Stack
+
+- React.js
+- React Router DOM
+- HTML/CSS (custom styling)
+- Node.js & Express (for backend API)
+- MongoDB (for user storage)
+- Nodemailer (for sending password reset emails)
+- JSON Web Tokens (JWT)
+
+## 🔧 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Mathankumar404/Login-signup
+
